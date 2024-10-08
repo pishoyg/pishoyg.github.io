@@ -71,15 +71,15 @@ table {
   width: 100%;
 }
 
-thead tr.results {
+.results thead tr {
   border-bottom: 1px solid black;
 }
 
-tbody tr.results:not(:last-child) {
+.results tbody tr:not(:last-child) {
   border-bottom: 1px solid black;
 }
 
-td.results:not(:first-child) {
+.results td:not(:first-child) {
   border-left: 1px solid black;
   padding-left: 5px;
 }
@@ -92,7 +92,7 @@ td.results:not(:first-child) {
     width: 100%;
   }
 
-  td.results {
+  .results td {
     border: 1px solid #ddd;
   }
 
@@ -291,6 +291,10 @@ td.results:not(:first-child) {
 .header {
   table-layout: fixed;
   width: 100%;
+}
+
+.header td:not(:first-child) {
+  border-left: 1px solid #ddd;
 }
 
 .small {
