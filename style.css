@@ -66,15 +66,6 @@ ol li a:hover {
   background-color: #2980B9;
 }
 
-/* Media queries for responsiveness */
-
-@media (width <= 768px) {
-  figure img {
-    height: auto;
-    width: 100%;
-  }
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -96,21 +87,13 @@ td:not(:first-child) {
 /* Responsive table layout for mobile */
 
 @media (width <= 500px) {
-  table,  thead,  tbody,  th,  td,  tr {
-    display: block;
+  figure img {
+    height: auto;
+    width: 100%;
   }
 
   td {
-    border: none;
-    padding-bottom: 10px;
-    padding-left: 0;
-  }
-
-  td::before {
-    content: attr(data-label);
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    border: 1px solid #ddd;
   }
 
   /* Center and space checkboxes for small screens */
@@ -122,7 +105,6 @@ td:not(:first-child) {
   }
 
   .checkboxes label {
-    margin-bottom: 5px;
     margin-right: 10px;
   }
 
@@ -224,4 +206,93 @@ td:not(:first-child) {
 
 .inline-logo {
   height: 20px;
+}
+
+.card {
+  font-size: 18px;
+}
+
+.bordered {
+  border: 1px solid black;
+}
+
+/* stylelint-disable selector-class-pattern */
+
+.nightMode .bordered {
+  border: 1px solid white;
+}
+
+/* stylelint-enable selector-class-pattern */
+
+.front {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hover-link {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
+}
+
+.hover-link:visited {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
+}
+
+.hover-link:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.light {
+  opacity: 0.7;
+}
+
+.heavy {
+  opacity: 1.0;
+}
+
+.lighter {
+  opacity: 0.7;
+}
+
+.very-light {
+  opacity: 0.3;
+}
+
+.nag-hammadi {
+  opacity: 0.5;
+}
+
+.header {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.small {
+  font-size: small;
+}
+
+.italic {
+  font-style: italic;
 }
