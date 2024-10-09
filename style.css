@@ -78,10 +78,6 @@ body {
   padding: 2px;
 }
 
-ol li a:hover {
-  background-color: #2980B9;
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -137,10 +133,6 @@ table {
   padding: 0;
 }
 
-.flashcards {
-  text-align: center;
-}
-
 /* KELLIA */
 
 .orth {
@@ -168,20 +160,12 @@ table {
   text-align: right;
 }
 
-.ref {
+.ref,.xr,.lang {
   color: gray;
 }
 
 .meaning {
   width: 70%;
-}
-
-.xr {
-  color: gray;
-}
-
-.lang {
-  color: gray;
 }
 
 /* Collapsible Elements */
@@ -219,6 +203,9 @@ table {
 }
 
 /* stylelint-enable selector-class-pattern */
+
+/* TODO: (#241) Use classes that represent types, rather than desired behaviour.
+* Otherwise, this doesn't represent real decoupling of the style from the HTML.: */
 
 .front {
   text-align: center;
