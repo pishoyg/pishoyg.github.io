@@ -34,6 +34,12 @@ figure {
   text-align: center;
 }
 
+.centerer {
+  text-align: center;
+  display: flex;
+  place-content: center center;
+}
+
 figure img {
   border: 2px solid #ddd;
   border-radius: 5px;
