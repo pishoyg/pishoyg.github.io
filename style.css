@@ -6,12 +6,21 @@ h1 {
   text-align: center;
 }
 
-a {
+a,.link {
   color: #3498DB;
+  cursor: pointer;
   text-decoration: none;
 }
 
-a:hover {
+.hover-link {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
+}
+
+a:hover,.link:hover,.hover-link:hover {
+  color: #3498DB;
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -49,6 +58,7 @@ body {
   line-height: 1.6;
   margin: 0 auto;
   max-width: 1000px;
+  padding: 10px;
 }
 
 /* Style download links */
@@ -87,7 +97,7 @@ table {
 /* Responsive table layout for mobile */
 
 @media (width <= 500px) {
-  figure img {
+  figure img,  iframe {
     height: auto;
     width: 100%;
   }
@@ -242,30 +252,6 @@ table {
 
 .right {
   float: right;
-}
-
-.link {
-  color: blue;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.hover-link {
-  color: inherit;
-  cursor: inherit;
-  text-decoration: inherit;
-}
-
-.hover-link:visited {
-  color: inherit;
-  cursor: inherit;
-  text-decoration: inherit;
-}
-
-.hover-link:hover {
-  color: blue;
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .light {
