@@ -99,7 +99,7 @@ table {
 /* Responsive table layout for mobile */
 
 @media (width <= 500px) {
-  figure img,  iframe {
+  figure img {
     height: auto;
     width: 100%;
   }
@@ -160,12 +160,20 @@ table {
   text-align: right;
 }
 
-.ref,.xr,.lang {
+.ref {
   color: gray;
 }
 
 .meaning {
   width: 70%;
+}
+
+.xr {
+  color: gray;
+}
+
+.lang {
+  color: gray;
 }
 
 /* Collapsible Elements */
@@ -188,6 +196,9 @@ table {
 
 /* Crum */
 
+/* TODO: (#241) Use classes that represent types, rather than desired behaviour.
+*  Otherwise, this doesn't represent real decoupling of the style from the HTML.: */
+
 .card {
   font-size: 18px;
 }
@@ -203,9 +214,6 @@ table {
 }
 
 /* stylelint-enable selector-class-pattern */
-
-/* TODO: (#241) Use classes that represent types, rather than desired behaviour.
-* Otherwise, this doesn't represent real decoupling of the style from the HTML.: */
 
 .front {
   text-align: center;
