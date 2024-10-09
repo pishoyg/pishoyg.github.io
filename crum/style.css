@@ -181,6 +181,7 @@ table {
 /* Collapsible Elements */
 
 .collapse:hover {
+  color: #3498DB;
   cursor: pointer;
   text-decoration: underline;
 }
